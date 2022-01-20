@@ -21,7 +21,6 @@ class UserRepository implements CreateUserRepository, ListUsersRepository {
   async listUsers(): Promise<User[]> {
     return this.storage.get<User[]>("users") ?? [];
   }
-
 }
 
 export { UserRepository };

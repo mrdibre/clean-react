@@ -29,7 +29,7 @@ module.exports = {
       { type: "domain", pattern: "domain/*" },
       { type: "infra", pattern: "infra/*" },
       { type: "main", pattern: "main/*" },
-      { type: "presentation", pattern: "presentation/*" },
+      { type: "ui", pattern: "ui/*" },
     ],
   },
   rules: {
@@ -76,8 +76,8 @@ module.exports = {
             allow: ["data", "domain"],
           },
           {
-            from: "presentation",
-            allow: ["data", "domain", "presentation"],
+            from: "ui",
+            allow: ["data", "domain", "ui"],
           },
           {
             from: "infra",
@@ -85,7 +85,7 @@ module.exports = {
           },
           {
             from: "main",
-            allow: ["data", "domain", "infra", "presentation", "main"],
+            allow: ["data", "domain", "infra", "ui", "main"],
           },
         ],
       },

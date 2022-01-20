@@ -38,8 +38,10 @@ module.exports = {
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/no-empty-interface": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-var-requires": "off",
     "prettier/prettier": "error",
     "import/newline-after-import": "error",
+    "import/no-unresolved": "error",
     "import/order": [
       "error",
       {

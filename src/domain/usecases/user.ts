@@ -5,6 +5,6 @@ export interface CreateUserUseCase {
   create(params: CreateUserDTO): Promise<User>;
 }
 
-export interface ListUsers {
+export interface ListUsersUseCase {
   list(): Promise<User[]>;
 }

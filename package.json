@@ -6,7 +6,9 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "lint": "eslint src --ext .ts .tsx"
+    "lint": "eslint src --ext .ts .tsx",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "dependencies": {
     "@mui/icons-material": "^5.3.0",
@@ -32,6 +34,14 @@
     "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^6.4.13",
+    "@storybook/addon-essentials": "^6.4.13",
+    "@storybook/addon-links": "^6.4.13",
+    "@storybook/builder-webpack5": "^6.4.13",
+    "@storybook/manager-webpack5": "^6.4.13",
+    "@storybook/node-logger": "^6.4.13",
+    "@storybook/preset-create-react-app": "^4.0.0",
+    "@storybook/react": "^6.4.13",
     "eslint": "^8.7.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-import-resolver-typescript": "^2.5.0",
@@ -39,12 +49,14 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-storybook": "^0.5.6",
     "husky": "^7.0.4",
     "lint-staged": "^12.2.1",
     "prettier": "^2.5.1",
     "react-app-rewire-alias": "^1.1.7",
     "react-app-rewired": "^2.1.11",
-    "tsconfig-paths": "^3.12.0"
+    "tsconfig-paths": "^3.12.0",
+    "webpack": "^5.66.0"
   },
   "_moduleAliases": {
     "@": "src"
@@ -53,6 +65,16 @@
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
     ]
   },
   "prettier": {

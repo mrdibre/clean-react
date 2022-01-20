@@ -16,6 +16,7 @@ module.exports = {
     "plugin:import/typescript",
     "plugin:react-hooks/recommended",
     "plugin:boundaries/recommended",
+    "plugin:storybook/recommended",
   ],
   settings: {
     "import/parsers": {
@@ -25,17 +26,39 @@ module.exports = {
       typescript: {},
     },
     "boundaries/elements": [
-      { type: "data", pattern: "data/*" },
-      { type: "domain", pattern: "domain/*" },
-      { type: "infra", pattern: "infra/*" },
-      { type: "main", pattern: "main/*" },
-      { type: "ui", pattern: "ui/*" },
+      {
+        type: "data",
+        pattern: "data/*",
+      },
+      {
+        type: "domain",
+        pattern: "domain/*",
+      },
+      {
+        type: "infra",
+        pattern: "infra/*",
+      },
+      {
+        type: "main",
+        pattern: "main/*",
+      },
+      {
+        type: "ui",
+        pattern: "ui/*",
+      },
     ],
   },
   rules: {
-    quotes: ["error", "double", { avoidEscape: true }],
+    quotes: [
+      "error",
+      "double",
+      {
+        avoidEscape: true,
+      },
+    ],
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/ban-types": "off",
     "@typescript-eslint/no-empty-interface": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/no-var-requires": "off",

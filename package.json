@@ -21,13 +21,24 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src --ext .ts .tsx"
+  },
+  "_moduleAliases": {
+    "@": "src"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ]
+  },
+  "prettier": {
+    "singleQuote": false,
+    "tabWidth": 2,
+    "arrowParens": "avoid",
+    "semi": true,
+    "trailingComma": "all"
   },
   "browserslist": {
     "production": [

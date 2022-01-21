@@ -25,12 +25,12 @@ const mockRepository = (): CreateUserRepository => {
 const makeSut = () => {
   const repository = mockRepository();
 
-  const sut = new CreateUser(mockRepository());
+  const sut = new CreateUser(repository);
 
   return { repository, sut };
 };
 
-describe("CreateUserUseCase", () => {
+describe("CreateUser UseCase", () => {
   it("Should call repository with correct values", async () => {
     const { sut, repository } = makeSut();
 

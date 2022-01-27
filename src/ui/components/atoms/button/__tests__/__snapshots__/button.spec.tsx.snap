@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Should match snapshot 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root-KjFju gUleGd MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root MuiButton-root-gygCtr esFZWn"
+    tabindex="0"
+    type="button"
+  >
+    label
+    <span
+      class="MuiTouchRipple-root-ieAhOC iowBRm MuiTouchRipple-root"
+    />
+  </button>
+</div>
+`;

@@ -1,11 +1,17 @@
 {
-  "name": "react-app-template",
+  "name": "clean-react-template",
   "version": "0.1.0",
   "private": true,
+  "author": "César Felipe <cesar.felp982@gmail.com>",
+  "homepage": "https://github.com/mrdibre/clean-react",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrdibre/clean-react"
+  },
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "test": "jest --config=jest.config.js --passWithNoTests --runInBand --detectOpenHandles",
+    "test": "jest --config=jest.config.js --passWithNoTests --detectOpenHandles",
     "test:ci": "yarn test --coverage",
     "test:dev": "yarn test --watch",
     "lint": "eslint src --ext .ts .tsx",

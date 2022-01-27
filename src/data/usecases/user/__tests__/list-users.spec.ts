@@ -1,6 +1,7 @@
 import { User } from "@/domain/entities";
-import { ListUsers } from "@/data/usecases/user";
 import { ListUsersRepository } from "@/data/protocols";
+
+import { ListUsers } from "../list-users";
 
 // It's recommended to move these 2 mock functions to a mock folder
 // to reuse the code that you probably need again

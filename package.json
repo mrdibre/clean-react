@@ -9,8 +9,9 @@
     "url": "https://github.com/mrdibre/clean-react"
   },
   "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
+    "start": "vite",
+    "preview": "vite preview",
+    "build": "vite build",
     "test": "jest --config=jest.config.js --passWithNoTests --detectOpenHandles",
     "test:ci": "yarn test --coverage",
     "test:dev": "yarn test --watch",
@@ -30,6 +31,7 @@
     "@types/node": "^16.11.21",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
+    "@vitejs/plugin-react": "^1.3.2",
     "jest": "^27.4.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -38,6 +40,7 @@
     "recoil": "^0.5.2",
     "styled-components": "^5.3.3",
     "typescript": "^4.5.4",
+    "vite": "^2.9.9",
     "web-vitals": "^2.1.3"
   },
   "resolutions": {
@@ -63,30 +66,12 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.2.1",
     "prettier": "^2.5.1",
-    "react-app-rewire-alias": "^1.1.7",
-    "react-app-rewired": "^2.1.11",
     "ts-jest": "^27.1.3",
     "tsconfig-paths": "^3.12.0",
     "webpack": "^5.66.0"
   },
   "_moduleAliases": {
     "@": "src"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ],
-    "overrides": [
-      {
-        "files": [
-          "**/*.stories.*"
-        ],
-        "rules": {
-          "import/no-anonymous-default-export": "off"
-        }
-      }
-    ]
   },
   "prettier": {
     "singleQuote": false,

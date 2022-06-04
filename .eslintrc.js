@@ -17,6 +17,16 @@ module.exports = {
     "plugin:react-hooks/recommended",
     "plugin:boundaries/recommended",
     "plugin:storybook/recommended",
+    "react-app",
+    "react-app/jest",
+  ],
+  overrides: [
+    {
+      files: ["**/*.stories.*"],
+      rules: {
+        "import/no-anonymous-default-export": "off",
+      },
+    },
   ],
   settings: {
     "import/parsers": {

@@ -1,5 +1,5 @@
-import { CreateUserDTO } from "@/domain/dtos";
-import { User } from "@/domain/entities";
+import { CreateUserDTO } from "../dtos";
+import { User } from "../entities";
 
 export interface CreateUserUseCase {
   create(params: CreateUserDTO): Promise<User>;

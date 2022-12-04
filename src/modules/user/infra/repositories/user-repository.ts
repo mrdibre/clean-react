@@ -1,7 +1,6 @@
-import { CreateUserRepository, ListUsersRepository } from "@/data/protocols";
-import { User } from "@/domain/entities";
-import { CreateUserDTO } from "@/domain/dtos";
-import { Storage } from "@/infra/protocols";
+import { CreateUserRepository, ListUsersRepository } from "@/modules/user/data/protocols";
+import { User } from "@/modules/user/domain/entities";
+import { CreateUserDTO } from "@/modules/user/domain/dtos";
 
 class UserRepository implements CreateUserRepository, ListUsersRepository {
   constructor(private readonly storage: Storage) {}

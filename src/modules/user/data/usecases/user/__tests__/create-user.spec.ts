@@ -1,6 +1,6 @@
-import { User } from "@/domain/entities";
-import { CreateUserDTO } from "@/domain/dtos";
-import { CreateUserRepository } from "@/data/protocols";
+import { User } from "../../../../domain/entities";
+import { CreateUserDTO } from "../../../../domain/dtos";
+import { CreateUserRepository } from "../../../protocols";
 
 import { CreateUser } from "../create-user";
 

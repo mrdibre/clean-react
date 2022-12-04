@@ -1,6 +1,6 @@
-import { Storage } from "@/infra/protocols";
+import { Storage } from "./storage";
 
-class LocalStorageAdapter implements Storage {
+export class LocalStorageAdapter implements Storage {
   add<T>(key: string, value: T): T {
     localStorage.setItem(key, JSON.stringify(value));
 
@@ -17,5 +17,3 @@ class LocalStorageAdapter implements Storage {
     localStorage.removeItem(key);
   }
 }
-
-export { LocalStorageAdapter };

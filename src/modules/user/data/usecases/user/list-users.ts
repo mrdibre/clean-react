@@ -1,6 +1,6 @@
-import { ListUsersUseCase } from "@/domain/usecases";
-import { ListUsersRepository } from "@/data/protocols";
-import { User } from "@/domain/entities";
+import { ListUsersUseCase } from "@/modules/user/domain/usecases";
+import { ListUsersRepository } from "@/modules/user/data/protocols";
+import { User } from "@/modules/user/domain/entities";
 
 class ListUsers implements ListUsersUseCase {
   constructor(private readonly repository: ListUsersRepository) {}

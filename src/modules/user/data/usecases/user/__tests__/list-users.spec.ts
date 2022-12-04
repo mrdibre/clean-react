@@ -1,5 +1,5 @@
-import { User } from "@/domain/entities";
-import { ListUsersRepository } from "@/data/protocols";
+import { User } from "../../../../domain/entities";
+import { ListUsersRepository } from "../../../protocols";
 
 import { ListUsers } from "../list-users";
 
